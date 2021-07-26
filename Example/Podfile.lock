@@ -1,0 +1,16 @@
+PODS:
+  - SightCall-Example (0.1.0)
+
+DEPENDENCIES:
+  - SightCall-Example (from `../`)
+
+EXTERNAL SOURCES:
+  SightCall-Example:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SightCall-Example: 7a50b1070995dce37ed6d7fe99611bacb022b0f5
+
+PODFILE CHECKSUM: b1ee1c2310caef3332e630d7fb6ba8e03a16369a
+
+COCOAPODS: 1.10.1

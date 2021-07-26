@@ -13,14 +13,14 @@
 
 /* Begin PBXFileReference section */
 		195A6BC8DB1764569FF1A0BC /* Pods-SightCall-Example_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SightCall-Example_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SightCall-Example_Tests/Pods-SightCall-Example_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2F9297510FAE5E73CC619991 /* SightCall-Example.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "SightCall-Example.podspec"; path = "../SightCall-Example.podspec"; sourceTree = "<group>"; };
-		3F5DD864580CBC85C8E3C991 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2F9297510FAE5E73CC619991 /* SightCall-Example.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "SightCall-Example.podspec"; path = "../SightCall-Example.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3F5DD864580CBC85C8E3C991 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SightCall-Example_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SightCall-Example_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		94205CA9CE97FAC3B40C05EA /* Pods-SightCall-Example_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SightCall-Example_Tests.release.xcconfig"; path = "Target Support Files/Pods-SightCall-Example_Tests/Pods-SightCall-Example_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		94F0BA4BBC5BA879DD8E70DE /* Pods_SightCall_Example_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SightCall_Example_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5823F51F672B0D97FA51370 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A5823F51F672B0D97FA51370 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,6 @@
 				195A6BC8DB1764569FF1A0BC /* Pods-SightCall-Example_Tests.debug.xcconfig */,
 				94205CA9CE97FAC3B40C05EA /* Pods-SightCall-Example_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
