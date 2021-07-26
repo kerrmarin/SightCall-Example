@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SightCall-Example_Tests' do
+  pod 'SightCall-Example', :path => '../'
+  
+  
+end
