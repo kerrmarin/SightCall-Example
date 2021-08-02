@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SightCall-Example/Classes/**/*"
+  "source_files": "SightCall-Example/Classes/**/*",
+  "dependencies": {
+    "LSUniversalSDK": [
+
+    ]
+  }
 }
