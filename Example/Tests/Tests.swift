@@ -1,5 +1,5 @@
 import XCTest
-import SightCall-Example
+import SightCall_Example
 
 class Tests: XCTestCase {
     
