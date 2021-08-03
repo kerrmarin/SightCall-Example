@@ -149,8 +149,8 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/LSUniversalSDK/AdvancedAnnotations.xcframework" "AdvancedAnnotations" "framework" "ios-x86_64-simulator" "ios-arm64_armv7"
-install_xcframework "${PODS_ROOT}/LSUniversalSDK/LSUniversalSDK.xcframework" "LSUniversalSDK" "framework" "ios-x86_64-simulator" "ios-arm64_armv7"
-install_xcframework "${PODS_ROOT}/LSUniversalSDK/LiveTranslation.xcframework" "LiveTranslation" "framework" "ios-arm64_armv7" "ios-x86_64-simulator"
-install_xcframework "${PODS_ROOT}/LSUniversalSDK/Multiparty.xcframework" "Multiparty" "framework" "ios-x86_64-simulator" "ios-arm64_armv7"
+install_xcframework "${PODS_ROOT}/../../SightCall-Example/sdk/LSUniversalSDK.xcframework" "LSUniversalSDK" "framework" "ios-x86_64-simulator" "ios-arm64_armv7"
+install_xcframework "${PODS_ROOT}/../../SightCall-Example/sdk/AdvancedAnnotations.xcframework" "AdvancedAnnotations" "framework" "ios-x86_64-simulator" "ios-arm64_armv7"
+install_xcframework "${PODS_ROOT}/../../SightCall-Example/sdk/LiveTranslation.xcframework" "LiveTranslation" "framework" "ios-arm64_armv7" "ios-x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../SightCall-Example/sdk/Multiparty.xcframework" "Multiparty" "framework" "ios-x86_64-simulator" "ios-arm64_armv7"
 

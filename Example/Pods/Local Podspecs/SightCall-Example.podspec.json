@@ -16,12 +16,23 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "14.0"
   },
   "source_files": "SightCall-Example/Classes/**/*",
-  "dependencies": {
-    "LSUniversalSDK": [
-
-    ]
+  "vendored_frameworks": [
+    "SightCall-Example/sdk/LSUniversalSDK.xcframework",
+    "SightCall-Example/sdk/AdvancedAnnotations.xcframework",
+    "SightCall-Example/sdk/LiveTranslation.xcframework",
+    "SightCall-Example/sdk/Multiparty.xcframework"
+  ],
+  "ios": {
+    "pod_target_xcconfig": {
+      "ONLY_ACTIVE_ACH": "YES",
+      "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    },
+    "user_target_xcconfig": {
+      "ONLY_ACTIVE_ACH": "YES",
+      "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    }
   }
 }

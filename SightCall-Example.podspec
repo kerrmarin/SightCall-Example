@@ -26,10 +26,17 @@ TODO: Add long description of the pod here.
   s.author           = { 'Kerr Marin Miller' => 'kerr@kerrmarin.com' }
   s.source           = { :git => 'https://github.com/Kerr Marin Miller/SightCall-Example.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '14.0'
 
   s.source_files = 'SightCall-Example/Classes/**/*'
 
-  s.dependency 'LSUniversalSDK' # No way here to specify a git URL. Must be a published pod.
+  s.vendored_frameworks = [
+    'SightCall-Example/sdk/LSUniversalSDK.xcframework',
+    'SightCall-Example/sdk/AdvancedAnnotations.xcframework',
+    'SightCall-Example/sdk/LiveTranslation.xcframework',
+    'SightCall-Example/sdk/Multiparty.xcframework'
+  ]
+  s.ios.pod_target_xcconfig = { 'ONLY_ACTIVE_ACH' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.ios.user_target_xcconfig = { 'ONLY_ACTIVE_ACH' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
